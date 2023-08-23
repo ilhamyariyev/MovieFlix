@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.info.movieflix.presentation.ui.welcomeSlider.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/toinputOptionFragment"
+            app:destination="@id/inputOptionFragment" />
+        <action
+            android:id="@+id/tosplash"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputOptionFragment"
+        android:name="com.info.movieflix.presentation.ui.auth.InputOptionFragment"
+        android:label="fragment_input_option"
+        tools:layout="@layout/fragment_input_option" >
+        <action
+            android:id="@+id/to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/tosignInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.info.movieflix.presentation.ui.auth.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/tosplash"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.info.movieflix.presentation.ui.auth.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.info.movieflix.presentation.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/towelcome"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/tohomeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.info.movieflix.presentation.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toSeeAll"
+            app:destination="@id/seeAllMoviesFragment" />
+        <action
+            android:id="@+id/todetailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.info.movieflix.presentation.ui.explore.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/tofilterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/todetailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.info.movieflix.presentation.ui.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download" />
+    <fragment
+        android:id="@+id/myListFragment"
+        android:name="com.info.movieflix.presentation.ui.myList.MyListFragment"
+        android:label="fragment_my_list"
+        tools:layout="@layout/fragment_my_list" >
+        <action
+            android:id="@+id/todetailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.info.movieflix.presentation.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/toSubscribe"
+            app:destination="@id/subScribeFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toEditProfile"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/filterFragment"
+        android:name="com.info.movieflix.presentation.ui.explore.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/seeAllMoviesFragment"
+        android:name="com.info.movieflix.presentation.ui.seeAllMovies.SeeAllMoviesFragment"
+        android:label="fragment_see_all_movies"
+        tools:layout="@layout/fragment_see_all_movies" >
+        <action
+            android:id="@+id/todetailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="movie"
+            app:argType="com.info.movieflix.domain.model.MovieType" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.info.movieflix.presentation.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/toRating"
+            app:destination="@id/ratingFragment" />
+        <action
+            android:id="@+id/toDownload"
+            app:destination="@id/downloadDialogFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/toyoutubeplayer"
+            app:destination="@id/youtubePlayerFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/ratingFragment"
+        android:name="com.info.movieflix.presentation.ui.detail.RatingFragment"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/downloadDialogFragment"
+        android:name="com.info.movieflix.presentation.ui.detail.DownloadDialogFragment"
+        android:label="fragment_download_dialog"
+        tools:layout="@layout/fragment_download_dialog" />
+    <fragment
+        android:id="@+id/youtubePlayerFragment"
+        android:name="com.info.movieflix.presentation.ui.detail.YoutubePlayerFragment"
+        android:label="fragment_youtube_player"
+        tools:layout="@layout/fragment_youtube_player" >
+        <argument
+            android:name="videoId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.info.movieflix.presentation.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.info.movieflix.presentation.ui.profile.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/toprofile"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/paymentFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/subScribeFragment"
+        android:name="com.info.movieflix.presentation.ui.profile.SubScribeFragment"
+        android:label="fragment_sub_scribe"
+        tools:layout="@layout/fragment_sub_scribe" >
+        <action
+            android:id="@+id/action_subScribeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:popUpTo="@id/subScribeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

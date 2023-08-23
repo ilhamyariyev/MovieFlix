@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="#E0E0E0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#E0E0E0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline46"
+        app:layout_constraintStart_toStartOf="@+id/guideline45"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline46"
+        app:layout_constraintStart_toStartOf="@+id/guideline45"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Are you sure want to logout?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline46"
+        app:layout_constraintStart_toStartOf="@+id/guideline45"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:padding="13dp"
+        android:backgroundTint="#FCE7E9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline47"
+        app:layout_constraintStart_toStartOf="@+id/guideline45"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonYes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Yes,Logout"
+        android:textStyle="bold"
+        android:padding="13dp"
+        android:backgroundTint="#E21221"
+        app:layout_constraintEnd_toStartOf="@+id/guideline46"
+        app:layout_constraintStart_toStartOf="@+id/guideline47"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

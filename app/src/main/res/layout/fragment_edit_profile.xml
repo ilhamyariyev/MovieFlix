@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.profile.EditProfileFragment">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGetStarted2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCountry"
+        app:rippleColor="#FD7676" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="#E21221"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProfile"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProfile">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingRight="1dp"
+            android:src="@drawable/pen"
+            app:tint="@color/white"
+            tools:layout_editor_absoluteX="203dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:src="@color/place_holder"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Edit Profile"
+        android:textColor="#151414"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintStart_toEndOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.050890584" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="User Name"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="E-mail"
+        android:drawableEnd="@drawable/baseline_mail_outline_24"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Number"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMail" />
+
+
+
+    <EditText
+        android:id="@+id/editTextGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Gender"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_bck"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Country"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

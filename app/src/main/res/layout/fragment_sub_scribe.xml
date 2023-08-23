@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.profile.SubScribeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutmonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cv_background"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+
+        <View
+            android:id="@+id/view91"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="#80B3B3B3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView251" />
+
+        <ImageView
+            android:id="@+id/imageView211"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tac"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline381"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <TextView
+            android:id="@+id/textView251"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="$9.99"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline381"
+            app:layout_constraintTop_toBottomOf="@+id/imageView211" />
+
+        <TextView
+            android:id="@+id/textView301"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="/month"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView251"
+            app:layout_constraintStart_toEndOf="@+id/textView251" />
+
+        <ImageView
+            android:id="@+id/imageView251"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check"
+            app:layout_constraintStart_toStartOf="@+id/view91"
+            app:layout_constraintTop_toBottomOf="@+id/view91"
+            app:tint="@color/red" />
+
+        <ImageView
+            android:id="@+id/imageView261"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check"
+            app:layout_constraintStart_toStartOf="@+id/imageView251"
+            app:layout_constraintTop_toBottomOf="@+id/imageView251"
+            app:tint="@color/red" />
+
+        <ImageView
+            android:id="@+id/imageView271"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView261"
+            app:layout_constraintTop_toBottomOf="@+id/imageView261"
+            app:tint="@color/red" />
+
+        <TextView
+            android:id="@+id/textView311"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Watch all you want. Add free"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView251"
+            app:layout_constraintStart_toEndOf="@+id/imageView251"
+            app:layout_constraintTop_toTopOf="@+id/imageView251" />
+
+        <TextView
+            android:id="@+id/textView351"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Allows streaming of 4K"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView261"
+            app:layout_constraintStart_toEndOf="@+id/imageView261"
+            app:layout_constraintTop_toTopOf="@+id/imageView261" />
+
+        <TextView
+            android:id="@+id/textView361"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Video and Audio quality is Better"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView271"
+            app:layout_constraintStart_toEndOf="@+id/imageView271"
+            app:layout_constraintTop_toTopOf="@+id/imageView271" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutyear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cv_background"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutmonth">
+
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="#80B3B3B3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tac"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="$9.99"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline38"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="/month"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check"
+            android:tint="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check"
+            android:tint="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/imageView25"
+            app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/check"
+            android:tint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView26"
+            app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Watch all you want. Add free"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Allows streaming of 4K"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+            app:layout_constraintStart_toEndOf="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Video and Audio quality is Better"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/imageView27" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Subscribe  to Premium"
+        android:textColor="@color/red"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewback1" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enjoy hatching Full-HD movies,without restrictions  and without ads"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/imageViewback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

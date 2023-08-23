@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934067326793",
+    "project_id": "movieflix-ab2d0",
+    "storage_bucket": "movieflix-ab2d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934067326793:android:8dd1a6797a7aeb97605498",
+        "android_client_info": {
+          "package_name": "com.info.movieflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934067326793-ercp2qs1c98vgf13b7fqt52b19nhmrnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABhRqjPYBnDQd8EGaOOvlV2SRLHcoFz2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934067326793-ercp2qs1c98vgf13b7fqt52b19nhmrnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
